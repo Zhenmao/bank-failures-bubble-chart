@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Failures Bubble Chart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>U.S. Bank Failures</h1>
+      <div class="toggle-buttons" role="group" aria-label="Group by toggle">
+        <input
+          type="radio"
+          name="groupBy"
+          id="groupBy1"
+          autocomplete="off"
+          value=""
+          checked
+        />
+        <label for="groupBy1">All</label>
+        <input
+          type="radio"
+          name="groupBy"
+          id="groupBy2"
+          autocomplete="off"
+          value="state"
+        />
+        <label for="groupBy2">Group by State</label>
+        <input
+          type="radio"
+          name="groupBy"
+          id="groupBy3"
+          autocomplete="off"
+          value="year"
+        />
+        <label for="groupBy3">Group by Year</label>
+      </div>
+      <div class="chart" id="chart"> </div>
+    </main>
+    <footer>
+      <p
+        >Note: Only shows FDIC-reported bank failures; does not include
+        investment banks and non-U.S. banks.</p
+      >
+      <p
+        >Data Source:
+        <a
+          href="https://observablehq.com/@mbostock/bank-failures"
+          target="_blank"
+          >Bank failures</a
+        ></p
+      >
+    </footer>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/bubble-chart.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
