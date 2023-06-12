@@ -1,4 +1,4 @@
-# [Bank Failure Bubble Chart](https://zhenmao.github.io/bank-failure-bubble-chart/)
+# [Bank Failure Bubble Chart](https://zhenmao.github.io/bank-failures-bubble-chart/)
 
 Bubble chart with group by controls.
 
